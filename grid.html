@@ -1,0 +1,79 @@
+<html>
+<head>
+<style>
+/* Preserve some sanity */
+
+.col {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body {
+	width:100%;
+	height:auto;
+	margin:0;
+	display:block;
+	background-color:#fff;
+	padding:0;
+}
+
+.row {
+	display:block;
+	margin:0;
+	padding:0;
+	background-color:#e9e9e9;
+	height:900px;
+}
+p { margin:0; }
+body>.row {
+	margin:0 4%;
+}
+
+.row { height:100px;}
+.col-1 { width:8.33%; float:left; padding-right:15px; }
+.col-2 { width:16.66%; float:left; padding-right:15px; }
+.col-3 { width:25%; float:left; padding-right:15px; }
+.col-4 { width:33.33%; float:left; padding-right:15px; }
+.col-5 { width:41.66%; float:left; padding-right:15px; }
+.col-6 { width:50%; float:left; padding-right:15px; }
+.col-7 { width:58.33%; float:left; padding-right:15px; }
+.col-8 { width:66.66%; float:left; padding-right:15px; }
+.col-9 { width:75%; float:left; padding-right:15px; }
+.col-10 { width:83.33%; float:left; padding-right:15px; }
+.col-11 { width:91.66%; float:left; padding-right:15px; }
+.col-12 { width: 100%; float:left; padding-right:15px; }
+.row :last-child { padding-right: 0; }
+.row :last-child:after {
+	clear: both;
+}
+.no-gutter { padding:0;}
+.boxed { padding:10px; background-color:#fff; }
+.row {
+*zoom: 1;
+}
+.row:before, .row:after {
+display: table;
+content: "";
+line-height: 0;
+}
+.row:after {
+clear: both;
+}
+</style>
+</head>
+<body>
+	<div class="row">
+		<aside class="col-3">
+			<div class="row">
+				<div class="col-6  no-gutter"><p class="boxed">sf</p></div>
+				<div class="col-6  no-gutter"><p class="boxed">asf</p></div>
+			</div>
+		</aside>
+		<div class="col-3"><p>asf</p></div>
+		<div class="col-4"><p>asf</p></div>
+		<div class="col-2"><p>asf</p></div>
+	</div>
+
+</body>
+
+</html>
